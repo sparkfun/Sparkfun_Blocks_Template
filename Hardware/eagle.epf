@@ -1,0 +1,39 @@
+[Eagle]
+Version="06 05 00"
+Platform="Windows"
+Serial="6A0C6BA654-LSR-WLM30CP"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SparkFun-Eagle-Libraries/LilyPad-Wearables.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SparkFun-Eagle-Libraries/SparkFun-Aesthetics.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SparkFun-Eagle-Libraries/SparkFun-AnalogIC.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SparkFun-Eagle-Libraries/SparkFun-Boards.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SparkFun-Eagle-Libraries/SparkFun-Capacitors.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SparkFun-Eagle-Libraries/SparkFun-Connectors.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SparkFun-Eagle-Libraries/SparkFun-DigitalIC.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SparkFun-Eagle-Libraries/SparkFun-DiscreteSemi.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SparkFun-Eagle-Libraries/SparkFun-Displays.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SparkFun-Eagle-Libraries/SparkFun-Electromechanical.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SparkFun-Eagle-Libraries/SparkFun-FreqCtrl.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SparkFun-Eagle-Libraries/SparkFun-LED.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SparkFun-Eagle-Libraries/SparkFun-Passives.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SparkFun-Eagle-Libraries/SparkFun-PowerIC.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SparkFun-Eagle-Libraries/SparkFun-RF.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SparkFun-Eagle-Libraries/SparkFun-Resistors.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SparkFun-Eagle-Libraries/SparkFun-Retired.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SparkFun-Eagle-Libraries/SparkFun-Sensors.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SFE_Testing_Eagle_Library/Testing.lbr"
+UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SFE_Testing_Eagle_Library/USB-A-SMD-MALE-LOCKING_FP_TESTING.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="-1053 307 -70 706"
+State=2
+Number=0
+
+[Desktop]
+Screen="3840 1200"
+Window="Win_1"

@@ -1,4 +1,4 @@
-Edison_Mezzanine_Template
-=========================
+Edison_Mezzanine_Base
+=====================
 
-The reference template that all mezzanine stacks adhere to.
+Base Board for Edison Mezzanine stack
