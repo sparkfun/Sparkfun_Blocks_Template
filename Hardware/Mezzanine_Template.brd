@@ -152,19 +152,19 @@
 <text x="31.115" y="39.37" size="1.778" layer="51" rot="R270">Nothing goes here...  I mean it.</text>
 <text x="29.337" y="29.21" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center">Example Name of Board</text>
 <wire x1="1.778" y1="44.45" x2="28.702" y2="44.45" width="0.1524" layer="20"/>
-<wire x1="30.48" y1="44.704" x2="30.48" y2="50.8" width="0.254" layer="51"/>
-<wire x1="30.48" y1="50.8" x2="0" y2="50.8" width="0.254" layer="51"/>
-<wire x1="0" y1="50.8" x2="0" y2="44.704" width="0.254" layer="51"/>
+<wire x1="30.48" y1="44.704" x2="30.48" y2="53.34" width="0.254" layer="51"/>
+<wire x1="30.48" y1="53.34" x2="0" y2="53.34" width="0.254" layer="51"/>
+<wire x1="0" y1="53.34" x2="0" y2="44.704" width="0.254" layer="51"/>
 <wire x1="30.48" y1="1.778" x2="28.702" y2="0" width="0.1524" layer="20" curve="-90"/>
 <wire x1="1.778" y1="0" x2="0" y2="1.778" width="0.1524" layer="20" curve="-90"/>
 <wire x1="0" y1="42.672" x2="1.778" y2="44.45" width="0.1524" layer="20" curve="-90"/>
 <wire x1="28.702" y1="44.45" x2="30.48" y2="42.672" width="0.1524" layer="20" curve="-90"/>
-<text x="14.986" y="51.816" size="1.27" layer="51" ratio="15" align="center">Max Board Length</text>
+<text x="14.986" y="54.356" size="1.27" layer="51" ratio="15" align="center">Max Board Length</text>
 <dimension x1="28.575" y1="1.905" x2="1.905" y2="1.905" x3="15.24" y3="-2.54" textsize="1.27" textratio="15" layer="51" dtype="horizontal" unit="inch"/>
 <dimension x1="30.48" y1="1.728" x2="0" y2="2.54" x3="15.24" y3="-5.08" textsize="1.27" textratio="15" layer="51" dtype="horizontal" unit="inch"/>
 <dimension x1="1.905" y1="42.545" x2="1.905" y2="1.905" x3="35.56" y3="22.225" textsize="1.27" textratio="15" layer="51" dtype="vertical" unit="inch"/>
 <dimension x1="1.778" y1="44.45" x2="5.08" y2="0" x3="38.1" y3="22.225" textsize="1.27" textratio="15" layer="51" dtype="vertical" unit="inch"/>
-<dimension x1="0" y1="50.8" x2="2.54" y2="0" x3="40.64" y3="25.4" textsize="1.27" textratio="15" layer="51" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="53.34" x2="2.54" y2="0" x3="40.64" y3="26.67" textsize="1.27" textratio="15" layer="51" dtype="vertical" unit="inch"/>
 <rectangle x1="22.098" y1="26.162" x2="30.48" y2="44.45" layer="42" rot="R180"/>
 <rectangle x1="22.098" y1="26.162" x2="30.48" y2="44.45" layer="41" rot="R180"/>
 <dimension x1="1.778" y1="42.672" x2="0.4190875" y2="43.81858125" x3="-5.542384375" y3="48.848575" textsize="1.778" layer="51" dtype="radius"/>
