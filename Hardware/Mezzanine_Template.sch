@@ -16010,10 +16010,14 @@ logo. Default layer for the logo on the board is tSilk.</description>
 <wire x1="1.86" y1="20.77" x2="4.74" y2="20.77" width="0.2032" layer="21"/>
 <wire x1="4.74" y1="20.77" x2="4.74" y2="3.97" width="0.2032" layer="21"/>
 <wire x1="4.74" y1="3.97" x2="1.86" y2="3.97" width="0.2032" layer="21"/>
-<wire x1="0" y1="35.5" x2="25" y2="35.5" width="0.2032" layer="21"/>
-<wire x1="25" y1="35.5" x2="25" y2="0" width="0.2032" layer="21"/>
-<wire x1="25" y1="0" x2="0" y2="0" width="0.2032" layer="21"/>
-<wire x1="0" y1="0" x2="0" y2="35.5" width="0.2032" layer="21"/>
+<wire x1="0" y1="35.5" x2="2" y2="35.5" width="0.2032" layer="21"/>
+<wire x1="23" y1="35.5" x2="25" y2="35.5" width="0.2032" layer="21"/>
+<wire x1="25" y1="35.5" x2="25" y2="33.5" width="0.2032" layer="21"/>
+<wire x1="25" y1="2" x2="25" y2="0" width="0.2032" layer="21"/>
+<wire x1="25" y1="0" x2="23" y2="0" width="0.2032" layer="21"/>
+<wire x1="2" y1="0" x2="0" y2="0" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="2" width="0.2032" layer="21"/>
+<wire x1="0" y1="33.5" x2="0" y2="35.5" width="0.2032" layer="21"/>
 <rectangle x1="0" y1="22.39" x2="5.78" y2="35.5" layer="39" rot="R180"/>
 <rectangle x1="0" y1="22.39" x2="5.78" y2="35.5" layer="40" rot="R180"/>
 <text x="0.616" y="34.992" size="0.8128" layer="25" font="vector" ratio="15" rot="R270">&gt;NAME</text>
@@ -16514,6 +16518,8 @@ logo. Default layer for the logo on the board is tSilk.</description>
 <plain>
 <text x="50.8" y="170.18" size="5.08" layer="92" align="center">TOP-EDISON</text>
 <text x="195.58" y="170.18" size="5.08" layer="92" align="center">BOTTOM</text>
+<text x="195.58" y="165.1" size="1.778" layer="92" align="center">Component side (Top Copper)</text>
+<text x="48.26" y="165.1" size="1.778" layer="92" align="center">(Bottom Copper)</text>
 </plain>
 <instances>
 <instance part="U2" gate="G$1" x="30.48" y="132.08"/>
