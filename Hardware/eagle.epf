@@ -30,8 +30,8 @@ UsedLibrary="C:/Users/casey.kuhns/Documents/GitHub/SFE_Testing_Eagle_Library/USB
 
 [Win_1]
 Type="Control Panel"
-Loc="-1053 307 -70 706"
-State=2
+Loc="785 24 1768 423"
+State=1
 Number=0
 
 [Desktop]

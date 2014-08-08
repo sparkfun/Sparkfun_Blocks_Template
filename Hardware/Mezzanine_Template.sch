@@ -11134,6 +11134,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="80.38" y="46.92"/>
 </polygon>
 </package>
+<package name="FIDUCIAL-1X2">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="MICRO-FIDUCIAL">
+<smd name="1" x="0" y="0" dx="0.635" dy="0.635" layer="1" roundness="100" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LETTER_L">
@@ -15796,6 +15802,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="40.16" y="23.55"/>
 </polygon>
 </symbol>
+<symbol name="FIDUCIAL">
+<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRAME-LETTER" prefix="FRAME">
@@ -15891,6 +15902,25 @@ logo. Default layer for the logo on the board is tSilk.</description>
 </technologies>
 </device>
 <device name="1_INCH" package="SFE_LOGO_NAME_FLAME_1">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL" prefix="FID">
+<description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
+Various fiducial points for machine vision alignment.</description>
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1X2" package="FIDUCIAL-1X2">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="UFIDUCIAL" package="MICRO-FIDUCIAL">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -16491,13 +16521,15 @@ logo. Default layer for the logo on the board is tSilk.</description>
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
-<part name="LOGO2" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
-<part name="LOGO3" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".1_INCH"/>
+<part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
+<part name="LOGO4" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".1_INCH"/>
 <part name="U2" library="Edison" deviceset="EDISON_CONNECTOR_FULL" device="MOUNTING_HOLES"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="U3" library="Edison" deviceset="EDISON_CONNECTOR_FULL" device="HEADER" value="EDISON_CONNECTOR_FULLHEADER"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME2" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
+<part name="FID1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="FID2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 </parts>
 <sheets>
 <sheet>
@@ -16506,8 +16538,10 @@ logo. Default layer for the logo on the board is tSilk.</description>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
-<instance part="LOGO2" gate="G$1" x="73.66" y="12.7"/>
-<instance part="LOGO3" gate="G$1" x="88.9" y="2.54"/>
+<instance part="LOGO1" gate="G$1" x="73.66" y="12.7"/>
+<instance part="LOGO4" gate="G$1" x="88.9" y="2.54"/>
+<instance part="FID1" gate="G$1" x="246.38" y="25.4"/>
+<instance part="FID2" gate="G$1" x="241.3" y="25.4"/>
 </instances>
 <busses>
 </busses>
