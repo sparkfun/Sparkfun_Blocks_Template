@@ -16530,10 +16530,14 @@ Various fiducial points for machine vision alignment.</description>
 <part name="FRAME2" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
 <part name="FID1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="FID2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="FID3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="FID4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="238.76" y="7.62" size="2.54" layer="94">v10</text>
+<text x="167.64" y="10.16" size="2.54" layer="94">Engineer</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -16542,6 +16546,8 @@ Various fiducial points for machine vision alignment.</description>
 <instance part="LOGO4" gate="G$1" x="88.9" y="2.54"/>
 <instance part="FID1" gate="G$1" x="246.38" y="25.4"/>
 <instance part="FID2" gate="G$1" x="241.3" y="25.4"/>
+<instance part="FID3" gate="G$1" x="246.38" y="30.48"/>
+<instance part="FID4" gate="G$1" x="241.3" y="30.48"/>
 </instances>
 <busses>
 </busses>
