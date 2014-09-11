@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -16282,6 +16282,7 @@ Various fiducial points for machine vision alignment.</description>
 <text x="-2.54" y="-86.36" size="1.27" layer="96">&gt;VALUE</text>
 <text x="-2.54" y="33.02" size="1.27" layer="95" align="top-left">&gt;NAME</text>
 <pin name="GP84_SD_CLK_FB" x="43.18" y="-5.08" length="short" rot="R180"/>
+<pin name="VSYS@4" x="-5.08" y="20.32" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -16356,6 +16357,7 @@ Various fiducial points for machine vision alignment.</description>
 <connect gate="G$1" pin="VSYS@1" pad="2"/>
 <connect gate="G$1" pin="VSYS@2" pad="4"/>
 <connect gate="G$1" pin="VSYS@3" pad="6"/>
+<connect gate="G$1" pin="VSYS@4" pad="14"/>
 <connect gate="G$1" pin="V_VAT_BKUP" pad="23"/>
 </connects>
 <technologies>
@@ -16428,6 +16430,7 @@ Various fiducial points for machine vision alignment.</description>
 <connect gate="G$1" pin="VSYS@1" pad="2"/>
 <connect gate="G$1" pin="VSYS@2" pad="4"/>
 <connect gate="G$1" pin="VSYS@3" pad="6"/>
+<connect gate="G$1" pin="VSYS@4" pad="14"/>
 <connect gate="G$1" pin="V_VAT_BKUP" pad="23"/>
 </connects>
 <technologies>
@@ -16500,6 +16503,7 @@ Various fiducial points for machine vision alignment.</description>
 <connect gate="G$1" pin="VSYS@1" pad="2"/>
 <connect gate="G$1" pin="VSYS@2" pad="4"/>
 <connect gate="G$1" pin="VSYS@3" pad="6"/>
+<connect gate="G$1" pin="VSYS@4" pad="14"/>
 <connect gate="G$1" pin="V_VAT_BKUP" pad="23"/>
 </connects>
 <technologies>
@@ -16556,8 +16560,8 @@ Various fiducial points for machine vision alignment.</description>
 </sheet>
 <sheet>
 <plain>
-<text x="50.8" y="170.18" size="5.08" layer="92" align="center">TOP-EDISON</text>
-<text x="195.58" y="170.18" size="5.08" layer="92" align="center">BOTTOM</text>
+<text x="48.26" y="170.18" size="5.08" layer="92" align="center">EDISON</text>
+<text x="195.58" y="170.18" size="5.08" layer="92" align="center">Stack Connector</text>
 <text x="195.58" y="165.1" size="1.778" layer="92" align="center">Component side (Top Copper)</text>
 <text x="48.26" y="165.1" size="1.778" layer="92" align="center">(Bottom Copper)</text>
 </plain>
@@ -16644,6 +16648,10 @@ Various fiducial points for machine vision alignment.</description>
 <junction x="22.86" y="157.48"/>
 <wire x1="22.86" y1="157.48" x2="20.32" y2="157.48" width="0.1524" layer="91"/>
 <label x="20.32" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="22.86" y1="154.94" x2="22.86" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="VSYS@4"/>
+<wire x1="22.86" y1="152.4" x2="25.4" y2="152.4" width="0.1524" layer="91"/>
+<junction x="22.86" y="154.94"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="VSYS@3"/>
@@ -16657,6 +16665,10 @@ Various fiducial points for machine vision alignment.</description>
 <junction x="170.18" y="157.48"/>
 <wire x1="170.18" y1="157.48" x2="167.64" y2="157.48" width="0.1524" layer="91"/>
 <label x="167.64" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="VSYS@4"/>
+<wire x1="172.72" y1="152.4" x2="170.18" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="152.4" x2="170.18" y2="154.94" width="0.1524" layer="91"/>
+<junction x="170.18" y="154.94"/>
 </segment>
 </net>
 <net name="3.3V" class="0">

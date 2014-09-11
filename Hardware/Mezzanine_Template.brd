@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -17,7 +17,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -147,10 +147,11 @@
 <hole x="1.905" y="1.905" drill="2"/>
 <hole x="1.905" y="42.545" drill="2"/>
 <hole x="28.575" y="42.545" drill="2"/>
-<text x="4.445" y="45.085" size="1.778" layer="51">Connectors Go Here</text>
-<text x="-2.54" y="41.91" size="1.778" layer="51" rot="R270">LED's and selector switches go here</text>
+<text x="8.255" y="45.085" size="1.778" layer="51">User Interface/
+ Connectors</text>
+<text x="-2.54" y="41.91" size="1.778" layer="51" rot="R270">LED's &amp; User Switches/Buttons Go Here</text>
 <text x="31.115" y="39.37" size="1.778" layer="51" rot="R270">Nothing goes here...  I mean it.</text>
-<text x="29.083" y="29.21" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center">Example Name of Board</text>
+<text x="29.083" y="31.75" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center">Name of Block</text>
 <wire x1="1.778" y1="44.45" x2="28.702" y2="44.45" width="0.1524" layer="20"/>
 <wire x1="30.48" y1="44.704" x2="30.48" y2="53.34" width="0.254" layer="51"/>
 <wire x1="30.48" y1="53.34" x2="0" y2="53.34" width="0.254" layer="51"/>
@@ -167,10 +168,12 @@
 <dimension x1="0" y1="53.34" x2="2.54" y2="0" x3="40.64" y3="26.67" textsize="1.27" textratio="15" layer="51" dtype="vertical" unit="inch"/>
 <rectangle x1="22.098" y1="26.162" x2="30.48" y2="44.45" layer="42" rot="R180"/>
 <rectangle x1="22.098" y1="26.162" x2="30.48" y2="44.45" layer="41" rot="R180"/>
-<dimension x1="1.778" y1="42.672" x2="0.4190875" y2="43.81858125" x3="-5.542384375" y3="48.848575" textsize="1.778" layer="51" dtype="radius"/>
+<dimension x1="1.905" y1="42.545" x2="0.4190875" y2="43.81858125" x3="-5.503225" y3="48.894621875" textsize="1.778" layer="51" dtype="radius" unit="inch"/>
 <dimension x1="29.28210625" y1="41.83789375" x2="27.86789375" y2="43.25210625" x3="34.29" y3="48.26" textsize="1.778" layer="51" dtype="diameter"/>
 <text x="29.21" y="6.35" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center">4xM2.0</text>
-<text x="30.099" y="3.81" size="1.016" layer="1" font="vector" ratio="14" rot="R90">v01</text>
+<text x="30.099" y="3.81" size="1.016" layer="1" font="vector" ratio="15" rot="R90">v01</text>
+<text x="33.02" y="-3.81" size="1.778" layer="51">Note: Units are in Inches</text>
+<text x="29.083" y="31.75" size="1.27" layer="22" font="vector" ratio="15" rot="SMR270" align="center">Name of Block</text>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
@@ -1650,7 +1653,7 @@ design rules under a new name.</description>
 </elements>
 <signals>
 <signal name="GND">
-<polygon width="0.1778" layer="16" spacing="0.254" isolate="0.1524" orphans="yes" rank="6">
+<polygon width="0.1778" layer="16" spacing="0.254" orphans="yes" rank="6">
 <vertex x="30.48" y="42.672"/>
 <vertex x="30.48" y="1.778" curve="-90"/>
 <vertex x="28.702" y="0"/>
@@ -1700,6 +1703,19 @@ design rules under a new name.</description>
 <contactref element="U3" pad="6"/>
 <contactref element="U3" pad="2"/>
 <contactref element="U3" pad="4"/>
+<contactref element="U2" pad="14"/>
+<contactref element="U3" pad="14"/>
+<wire x1="23.32" y1="22.1798" x2="23.9974" y2="22.1798" width="0.1524" layer="1"/>
+<wire x1="23.9974" y1="22.1798" x2="24.13" y2="22.0472" width="0.1524" layer="1"/>
+<wire x1="24.13" y1="22.0472" x2="24.13" y2="20.6502" width="0.1524" layer="1"/>
+<wire x1="24.13" y1="20.6502" x2="24.0596" y2="20.5798" width="0.1524" layer="1"/>
+<wire x1="24.0596" y1="20.5798" x2="23.32" y2="20.5798" width="0.1524" layer="1"/>
+<wire x1="23.32" y1="20.58" x2="24.0598" y2="20.58" width="0.1524" layer="16"/>
+<wire x1="24.0598" y1="20.58" x2="24.13" y2="20.6502" width="0.1524" layer="16"/>
+<wire x1="24.13" y1="20.6502" x2="24.13" y2="22.0472" width="0.1524" layer="16"/>
+<wire x1="24.13" y1="22.0472" x2="23.9974" y2="22.1798" width="0.1524" layer="16"/>
+<wire x1="23.9974" y1="22.1798" x2="23.3202" y2="22.1798" width="0.1524" layer="16"/>
+<wire x1="23.3202" y1="22.1798" x2="23.32" y2="22.18" width="0.1524" layer="16"/>
 </signal>
 <signal name="3.3V">
 <wire x1="23.32" y1="21.78" x2="23.32" y2="21.7798" width="0.1524" layer="16"/>
@@ -2407,7 +2423,6 @@ design rules under a new name.</description>
 <wire x1="21.082" y1="21.59" x2="21.7424" y2="20.9296" width="0.1524" layer="16"/>
 <wire x1="21.7424" y1="20.9296" x2="22.4536" y2="20.9296" width="0.1524" layer="16"/>
 <wire x1="22.4536" y1="20.9296" x2="22.504" y2="20.98" width="0.1524" layer="16"/>
-<wire x1="22.504" y1="20.98" x2="23.32" y2="20.98" width="0.1524" layer="16"/>
 <contactref element="U2" pad="12"/>
 <contactref element="U3" pad="12"/>
 <via x="21.082" y="21.59" extent="1-16" drill="0.3302"/>
@@ -2416,6 +2431,7 @@ design rules under a new name.</description>
 <wire x1="22.4536" y1="20.9296" x2="22.5044" y2="20.9804" width="0.1524" layer="1"/>
 <wire x1="22.5044" y1="20.9804" x2="23.3194" y2="20.9804" width="0.1524" layer="1"/>
 <wire x1="23.3194" y1="20.9804" x2="23.32" y2="20.9798" width="0.1524" layer="1"/>
+<wire x1="22.504" y1="20.98" x2="23.32" y2="20.98" width="0.1524" layer="16"/>
 </signal>
 <signal name="FW_RCVR">
 <wire x1="25.96" y1="9.38" x2="26.7642" y2="9.38" width="0.1524" layer="16"/>
@@ -2461,4 +2477,10 @@ design rules under a new name.</description>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
