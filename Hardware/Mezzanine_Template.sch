@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -16531,7 +16531,6 @@ Various fiducial points for machine vision alignment.</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="U3" library="Edison" deviceset="EDISON_CONNECTOR_FULL" device="HEADER" value="EDISON_CONNECTOR_FULLHEADER"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="FRAME2" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
 <part name="FID1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="FID2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="FID3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
@@ -16540,8 +16539,8 @@ Various fiducial points for machine vision alignment.</description>
 <sheets>
 <sheet>
 <plain>
-<text x="238.76" y="7.62" size="2.54" layer="94">v10</text>
-<text x="167.64" y="10.16" size="2.54" layer="94">Engineer</text>
+<text x="236.22" y="7.62" size="2.54" layer="94" ratio="15">v01.x</text>
+<text x="172.72" y="13.97" size="2.54" layer="94" ratio="15" align="top-left">Engineer</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -16560,18 +16559,16 @@ Various fiducial points for machine vision alignment.</description>
 </sheet>
 <sheet>
 <plain>
-<text x="48.26" y="170.18" size="5.08" layer="92" align="center">EDISON</text>
-<text x="195.58" y="170.18" size="5.08" layer="92" align="center">Stack Connector</text>
-<text x="195.58" y="165.1" size="1.778" layer="92" align="center">Component side (Top Copper)</text>
-<text x="48.26" y="165.1" size="1.778" layer="92" align="center">(Bottom Copper)</text>
+<text x="48.26" y="166.37" size="5.08" layer="92" align="bottom-center">EDISON</text>
+<text x="195.58" y="166.37" size="5.08" layer="92" align="bottom-center">Stack Connector</text>
+<text x="195.58" y="163.83" size="1.27" layer="92" align="bottom-center">Component side (Top Copper)</text>
+<text x="48.26" y="163.83" size="1.27" layer="92" align="bottom-center">(Bottom Copper)</text>
 </plain>
 <instances>
 <instance part="U2" gate="G$1" x="30.48" y="132.08"/>
 <instance part="GND3" gate="1" x="22.86" y="48.26"/>
 <instance part="U3" gate="G$1" x="177.8" y="132.08"/>
 <instance part="GND4" gate="1" x="170.18" y="48.26"/>
-<instance part="FRAME2" gate="G$1" x="0" y="0"/>
-<instance part="FRAME2" gate="G$2" x="147.32" y="0"/>
 </instances>
 <busses>
 <bus name="B$1">
