@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -142,38 +142,37 @@
 <wire x1="30.48" y1="42.672" x2="30.48" y2="1.778" width="0.1524" layer="20"/>
 <wire x1="28.702" y1="0" x2="1.778" y2="0" width="0.1524" layer="20"/>
 <wire x1="0" y1="1.778" x2="0" y2="42.672" width="0.1524" layer="20"/>
-<text x="25.4" y="-13.97" size="1.6764" layer="51" ratio="15">Engineer</text>
+<text x="29.21" y="-13.97" size="1.6764" layer="51" ratio="15">Engineer</text>
 <hole x="28.575" y="1.905" drill="2"/>
 <hole x="1.905" y="1.905" drill="2"/>
 <hole x="1.905" y="42.545" drill="2"/>
 <hole x="28.575" y="42.545" drill="2"/>
-<text x="8.255" y="45.085" size="1.778" layer="51">User Interface/
- Connectors</text>
-<text x="-2.54" y="41.91" size="1.778" layer="51" rot="R270">LED's &amp; User Switches/Buttons Go Here</text>
-<text x="31.115" y="39.37" size="1.778" layer="51" rot="R270">Nothing goes here...  I mean it.</text>
-<text x="29.083" y="31.75" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center">Name of Block</text>
+<text x="15.24" y="45.085" size="1.27" layer="51" align="bottom-center">User Interface/Connectors</text>
+<text x="-0.635" y="22.225" size="1.27" layer="51" rot="R270" align="top-center">LEDs &amp; User Switches/Buttons go here</text>
+<text x="31.115" y="22.225" size="1.27" layer="51" rot="R270" align="bottom-center">Nothing goes here...  I mean it.</text>
+<text x="29.718" y="25.74798125" size="1.27" layer="21" font="vector" ratio="15" rot="R90">Name of Block</text>
 <wire x1="1.778" y1="44.45" x2="28.702" y2="44.45" width="0.1524" layer="20"/>
-<wire x1="30.48" y1="44.704" x2="30.48" y2="53.34" width="0.254" layer="51"/>
+<wire x1="30.48" y1="46.99" x2="30.48" y2="53.34" width="0.254" layer="51"/>
 <wire x1="30.48" y1="53.34" x2="0" y2="53.34" width="0.254" layer="51"/>
-<wire x1="0" y1="53.34" x2="0" y2="44.704" width="0.254" layer="51"/>
+<wire x1="0" y1="53.34" x2="0" y2="46.99" width="0.254" layer="51"/>
 <wire x1="30.48" y1="1.778" x2="28.702" y2="0" width="0.1524" layer="20" curve="-90"/>
 <wire x1="1.778" y1="0" x2="0" y2="1.778" width="0.1524" layer="20" curve="-90"/>
 <wire x1="0" y1="42.672" x2="1.778" y2="44.45" width="0.1524" layer="20" curve="-90"/>
 <wire x1="28.702" y1="44.45" x2="30.48" y2="42.672" width="0.1524" layer="20" curve="-90"/>
-<text x="14.986" y="54.356" size="1.27" layer="51" ratio="15" align="center">Max Board Length</text>
-<dimension x1="28.575" y1="1.905" x2="1.905" y2="1.905" x3="15.24" y3="-2.54" textsize="1.27" textratio="15" layer="51" dtype="horizontal" unit="inch"/>
-<dimension x1="30.48" y1="1.728" x2="0" y2="2.54" x3="15.24" y3="-5.08" textsize="1.27" textratio="15" layer="51" dtype="horizontal" unit="inch"/>
-<dimension x1="1.905" y1="42.545" x2="1.905" y2="1.905" x3="35.56" y3="22.225" textsize="1.27" textratio="15" layer="51" dtype="vertical" unit="inch"/>
-<dimension x1="1.778" y1="44.45" x2="5.08" y2="0" x3="38.1" y3="22.225" textsize="1.27" textratio="15" layer="51" dtype="vertical" unit="inch"/>
-<dimension x1="0" y1="53.34" x2="2.54" y2="0" x3="40.64" y3="26.67" textsize="1.27" textratio="15" layer="51" dtype="vertical" unit="inch"/>
+<text x="15.24" y="53.975" size="1.27" layer="51" align="bottom-center">Max Board Length</text>
+<dimension x1="28.575" y1="1.905" x2="1.905" y2="1.905" x3="15.24" y3="-2.54" textsize="1.27" textratio="10" layer="51" dtype="horizontal" unit="inch"/>
+<dimension x1="30.48" y1="1.728" x2="0" y2="2.54" x3="15.24" y3="-5.08" textsize="1.27" textratio="10" layer="51" dtype="horizontal" unit="inch"/>
+<dimension x1="1.905" y1="42.545" x2="1.905" y2="1.905" x3="35.56" y3="22.225" textsize="1.27" textratio="10" layer="51" dtype="vertical" unit="inch"/>
+<dimension x1="1.778" y1="44.45" x2="5.08" y2="0" x3="38.1" y3="22.225" textsize="1.27" textratio="10" layer="51" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="53.34" x2="2.54" y2="0" x3="40.64" y3="26.67" textsize="1.27" textratio="10" layer="51" dtype="vertical" unit="inch"/>
 <rectangle x1="22.098" y1="26.162" x2="30.48" y2="44.45" layer="42" rot="R180"/>
 <rectangle x1="22.098" y1="26.162" x2="30.48" y2="44.45" layer="41" rot="R180"/>
-<dimension x1="1.905" y1="42.545" x2="0.4190875" y2="43.81858125" x3="-5.503225" y3="48.894621875" textsize="1.778" layer="51" dtype="radius" unit="inch"/>
-<dimension x1="29.28210625" y1="41.83789375" x2="27.86789375" y2="43.25210625" x3="34.29" y3="48.26" textsize="1.778" layer="51" dtype="diameter"/>
-<text x="29.21" y="6.35" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center">4xM2.0</text>
-<text x="30.099" y="3.81" size="1.016" layer="1" font="vector" ratio="15" rot="R90">v01</text>
+<dimension x1="1.905" y1="42.545" x2="0.5579625" y2="43.8920375" x3="-5.07986875" y3="49.285071875" textsize="1.27" textratio="10" layer="51" dtype="radius" unit="inch"/>
+<dimension x1="29.28210625" y1="41.83789375" x2="27.86789375" y2="43.25210625" x3="34.925" y3="48.895" textsize="1.27" textratio="10" layer="51" dtype="diameter" visible="yes"/>
+<text x="30.099" y="3.81" size="1.016" layer="1" font="vector" ratio="15" rot="R90">v01.x</text>
 <text x="33.02" y="-3.81" size="1.778" layer="51">Note: Units are in Inches</text>
-<text x="29.083" y="31.75" size="1.27" layer="22" font="vector" ratio="15" rot="SMR270" align="center">Name of Block</text>
+<text x="29.718" y="40.005" size="1.27" layer="22" font="vector" ratio="15" rot="SMR270">Name of Block</text>
+<text x="29.21" y="6.35" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center">4xM2.0</text>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
@@ -1640,12 +1639,11 @@ design rules under a new name.</description>
 <elements>
 <element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="-1.27" y="-13.97"/>
 <element name="LOGO2" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="5.842" y="1.778" rot="MR0"/>
-<element name="LOGO3" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="21.082" y="0.254" rot="MR0"/>
+<element name="LOGO3" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="21.125003125" y="0.254" rot="MR0"/>
 <element name="U2" library="Edison" package="EDISON_DAUGHTER" value="EDISON_CONNECTOR_FULLMOUNTING_HOLES" x="27.94" y="3.81" rot="MR0"/>
 <element name="U3" library="Edison" package="DF40C-70DP-0.4(51)" value="EDISON_CONNECTOR_FULLHEADER" x="24.64" y="16.1798" rot="MR90"/>
-<element name="FRAME2" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="-1.27" y="-13.97"/>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="5.842" y="1.778"/>
-<element name="LOGO4" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="9.2964" y="0.254"/>
+<element name="LOGO4" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="9.354996875" y="0.254"/>
 <element name="FID1" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="1.27" y="5.08"/>
 <element name="FID2" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="25.4" y="43.18"/>
 <element name="FID3" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="1.27" y="5.08" rot="MR0"/>
@@ -1664,7 +1662,7 @@ design rules under a new name.</description>
 <vertex x="28.702" y="44.45" curve="-90"/>
 </polygon>
 <polygon width="0.1778" layer="1" spacing="0.254" rank="6">
-<vertex x="30.48" y="1.728" curve="-90"/>
+<vertex x="30.48" y="1.778" curve="-90"/>
 <vertex x="28.752" y="0"/>
 <vertex x="1.778" y="0" curve="-90"/>
 <vertex x="0" y="1.778"/>
@@ -2477,10 +2475,4 @@ design rules under a new name.</description>
 </signals>
 </board>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
