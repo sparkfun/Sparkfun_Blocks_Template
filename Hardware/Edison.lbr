@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -457,7 +457,7 @@
 <text x="-2.54" y="-86.36" size="1.27" layer="96">&gt;VALUE</text>
 <text x="-2.54" y="33.02" size="1.27" layer="95" align="top-left">&gt;NAME</text>
 <pin name="GP84_SD_CLK_FB" x="43.18" y="-5.08" length="short" rot="R180"/>
-<pin name="VSYS@4" x="-5.08" y="20.32" length="short"/>
+<pin name="DCIN" x="-5.08" y="20.32" length="short"/>
 </symbol>
 <symbol name="EDISON_CONNECTOR_BASE">
 <pin name="VSYS@1" x="-2.54" y="0" length="short"/>
@@ -485,6 +485,7 @@
 <pin name="OSC_CLK_OUT_0" x="33.02" y="-15.24" length="short" rot="R180"/>
 <pin name="RCVR_MODE" x="33.02" y="-10.16" length="short" rot="R180"/>
 <pin name="FW_RCVR" x="33.02" y="-7.62" length="short" rot="R180"/>
+<pin name="DCIN" x="-2.54" y="-7.62" length="short"/>
 </symbol>
 <symbol name="EDISON_CONNECTOR_GPIO">
 <pin name="GP44" x="-2.54" y="0" length="short"/>
@@ -616,6 +617,7 @@
 <connect gate="G$1" pin="1.8V" pad="12"/>
 <connect gate="G$1" pin="3.3V@1" pad="8"/>
 <connect gate="G$1" pin="3.3V@2" pad="10"/>
+<connect gate="G$1" pin="DCIN" pad="14"/>
 <connect gate="G$1" pin="FAULT" pad="19"/>
 <connect gate="G$1" pin="FW_RCVR" pad="69"/>
 <connect gate="G$1" pin="GND@1" pad="1"/>
@@ -677,7 +679,6 @@
 <connect gate="G$1" pin="VSYS@1" pad="2"/>
 <connect gate="G$1" pin="VSYS@2" pad="4"/>
 <connect gate="G$1" pin="VSYS@3" pad="6"/>
-<connect gate="G$1" pin="VSYS@4" pad="14"/>
 <connect gate="G$1" pin="V_VAT_BKUP" pad="23"/>
 </connects>
 <technologies>
@@ -689,6 +690,7 @@
 <connect gate="G$1" pin="1.8V" pad="12"/>
 <connect gate="G$1" pin="3.3V@1" pad="8"/>
 <connect gate="G$1" pin="3.3V@2" pad="10"/>
+<connect gate="G$1" pin="DCIN" pad="14"/>
 <connect gate="G$1" pin="FAULT" pad="19"/>
 <connect gate="G$1" pin="FW_RCVR" pad="69"/>
 <connect gate="G$1" pin="GND@1" pad="1"/>
@@ -750,7 +752,6 @@
 <connect gate="G$1" pin="VSYS@1" pad="2"/>
 <connect gate="G$1" pin="VSYS@2" pad="4"/>
 <connect gate="G$1" pin="VSYS@3" pad="6"/>
-<connect gate="G$1" pin="VSYS@4" pad="14"/>
 <connect gate="G$1" pin="V_VAT_BKUP" pad="23"/>
 </connects>
 <technologies>
@@ -762,6 +763,7 @@
 <connect gate="G$1" pin="1.8V" pad="12"/>
 <connect gate="G$1" pin="3.3V@1" pad="8"/>
 <connect gate="G$1" pin="3.3V@2" pad="10"/>
+<connect gate="G$1" pin="DCIN" pad="14"/>
 <connect gate="G$1" pin="FAULT" pad="19"/>
 <connect gate="G$1" pin="FW_RCVR" pad="69"/>
 <connect gate="G$1" pin="GND@1" pad="1"/>
@@ -823,7 +825,6 @@
 <connect gate="G$1" pin="VSYS@1" pad="2"/>
 <connect gate="G$1" pin="VSYS@2" pad="4"/>
 <connect gate="G$1" pin="VSYS@3" pad="6"/>
-<connect gate="G$1" pin="VSYS@4" pad="14"/>
 <connect gate="G$1" pin="V_VAT_BKUP" pad="23"/>
 </connects>
 <technologies>
@@ -851,6 +852,7 @@
 <connect gate="_BASIC" pin="1.8V" pad="12"/>
 <connect gate="_BASIC" pin="3.3V@1" pad="8"/>
 <connect gate="_BASIC" pin="3.3V@2" pad="10"/>
+<connect gate="_BASIC" pin="DCIN" pad="14"/>
 <connect gate="_BASIC" pin="FW_RCVR" pad="69"/>
 <connect gate="_BASIC" pin="GND@1" pad="1"/>
 <connect gate="_BASIC" pin="GND@2" pad="5"/>
