@@ -16055,7 +16055,7 @@ Various fiducial points for machine vision alignment.</description>
 <hole x="2.93" y="1.98" drill="2"/>
 </package>
 <package name="DF40C-70DP-0.4(51)">
-<circle x="7.3" y="1" radius="0.1" width="0.3048" layer="21"/>
+<circle x="7.7" y="1" radius="0.1" width="0.3048" layer="21"/>
 <wire x1="-8.4" y1="1.44" x2="8.4" y2="1.44" width="0.2032" layer="21"/>
 <wire x1="8.4" y1="1.44" x2="8.4" y2="-1.44" width="0.2032" layer="21"/>
 <wire x1="8.4" y1="-1.44" x2="-8.4" y2="-1.44" width="0.2032" layer="21"/>
@@ -16130,6 +16130,10 @@ Various fiducial points for machine vision alignment.</description>
 <smd name="68" x="-6.4" y="-1.32" dx="0.2" dy="1.14" layer="16"/>
 <smd name="69" x="-6.8" y="1.32" dx="0.2" dy="1.14" layer="16"/>
 <smd name="70" x="-6.8" y="-1.32" dx="0.2" dy="1.14" layer="16"/>
+<smd name="NC4" x="-7.2" y="1.32" dx="0.2" dy="1.14" layer="16"/>
+<smd name="NC3" x="-7.2" y="-1.32" dx="0.2" dy="1.14" layer="16"/>
+<smd name="NC1" x="7.2" y="1.32" dx="0.2" dy="1.14" layer="16"/>
+<smd name="NC2" x="7.2" y="-1.32" dx="0.2" dy="1.14" layer="16"/>
 </package>
 <package name="DF40-XC-(X.X)-70DS-0.4V(51)">
 <smd name="69" x="-6.8" y="1.32" dx="0.2" dy="1.14" layer="1"/>
